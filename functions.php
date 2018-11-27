@@ -4,6 +4,10 @@
 
 add_theme_support( 'post-thumbnails' );
 
+//pav. dydžiai
+
+add_image_size('logo', 128, 50, false);
+
 // Apsibrėžiame stiliaus failus ir skriptus
 
 if( !defined('ASSETS_URL') ) {
@@ -49,7 +53,8 @@ add_action('wp_enqueue_scripts', 'theme_stylesheets');
 function register_theme_menus() {
    
 	register_nav_menus(array( 
-        'primary-navigation' => __( 'Primary Navigation' ) 
+        'primary-navigation' => __( 'Primary Navigation' ),
+        'footer-navigation' => __( 'Footer Navigation' ) 
     ));
 }
 
@@ -149,6 +154,16 @@ function makePostTypeLabels( $name, $nameSingular ) {
 		'not_found_in_trash' => __('Nothing found in Bin'),
 		'parent_item_colon' => ''
 	);
+}
+
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
+
+function dump($data){
+	echo '<pre style="background-color: white; color: black">';
+	print_r($data);
+	echo "</pre>";
 }
 
 ?>
