@@ -8,6 +8,7 @@ add_theme_support( 'post-thumbnails' );
 
 add_image_size('logo', 128, 50, false);
 add_image_size('big_logo', 235, 229, false);
+add_image_size('play', 37, 45, false);
 
 // Apsibrėžiame stiliaus failus ir skriptus
 
