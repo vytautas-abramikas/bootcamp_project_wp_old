@@ -11,6 +11,7 @@ add_image_size('big_logo', 235, 229, false);
 add_image_size('play', 37, 45, false);
 add_image_size('exp_pic', 50, 50, false);
 add_image_size('t_mem_pic', 220, 230, false);
+add_image_size('port_pic', 235, 175, false);
 
 // Apsibrėžiame stiliaus failus ir skriptus
 
