@@ -10,6 +10,7 @@ add_image_size('logo', 128, 50, false);
 add_image_size('big_logo', 235, 229, false);
 add_image_size('play', 37, 45, false);
 add_image_size('exp_pic', 50, 50, false);
+add_image_size('t_mem_pic', 220, 230, false);
 
 // Apsibrėžiame stiliaus failus ir skriptus
 

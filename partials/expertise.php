@@ -18,7 +18,7 @@
 											alt="<?php echo $exp_item_image['alt']; ?>"/>
 										</div>
 										<h4 class="exp_item_caption"><?php echo $exp_item_capt; ?></h4>	
-										<div class="exp_item_text"><?php echo $exp_item_text; ?>.</div>
+										<div class="exp_item_text"><?php echo $exp_item_text; ?></div>
 									</div>	
 								<?php	
 							endwhile;
