@@ -35,15 +35,13 @@ function theme_scripts(){
 }
 add_action('wp_enqueue_scripts', 'theme_scripts');
 
-// https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700,900|Roboto:100,300,400,900&amp;subset=latin-ext
-// style.css
+
 function theme_stylesheets(){
 
 	$styles_path = ASSETS_URL . '/assets/css/main.css';
 
 	if( $styles_path ) {
 	
-		// wp_register_style('main-css', ASSETS_URL . '/assets/css/main.css', array(), false, 'all');
 		wp_register_style('fonts', 'https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700,900|Roboto:100,300,400,900&amp;subset=latin-ext', array(), false, 'all');
 		wp_register_style('style', ASSETS_URL . '/assets/css/style.css', array('fonts'), false, 'all');
 		
