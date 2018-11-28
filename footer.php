@@ -5,7 +5,7 @@
 						<div class="footer_top">
 							<div class="studio_about">
 								<div class="logo_container">
-									<?php $logo_image = get_field('main_logo', 'option');?>
+									<?php $logo_image = get_field('main_logo');?>
 									<img src="<?php echo $logo_image['sizes']['logo']; ?>" alt="logo"/>
 								</div>
 								<p class="page_text">Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit.
@@ -77,13 +77,9 @@
 									'theme_location' => 'footer-navigation'
 								];
 
-							wp_nav_menu($footer_menu_args);
+								wp_nav_menu($footer_menu_args);
 								?>
-									<!-- <ul class="bottom_menu">
-										<li><a href="#">HELP</a></li>	
-										<li><a href="#">TERMS & CONDITIONS</a></li>	
-										<li><a href="#">PRIVACY</a></li>
-									</ul> -->
+
 								</nav>
 							</div>
 							<div class="bottom_right">Copyright © 2015 - Tajem Creative</div>

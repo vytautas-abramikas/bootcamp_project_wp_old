@@ -19,7 +19,7 @@
 						<div id="menu" class="menu_center">
 							<nav class="main_menu_all content_width">
 								<div class="logo_container">
-									<?php $logo_image = get_field('main_logo', 'option');?>
+									<?php $logo_image = get_field('main_logo');?>
 									<img src="<?php echo $logo_image['sizes']['logo']; ?>" alt="logo"/>
 								</div>
 
@@ -35,11 +35,11 @@
 
 							</nav>
 						</div>
-						<h1 id="hero_title"><?php the_field('hero_title', 'option'); ?></h1>
-						<p class="page_text slide">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-						<p class="page_text slide">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. This is Photoshop's version  of Lorem Ipsum. </p>
-						<p class="page_text slide">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-						<p class="page_text slide">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						<h1 id="hero_title"><?php the_field('hero_title'); ?></h1>
+						<p class="page_text slide"><?php the_field('hero_text_1'); ?></p>
+						<p class="page_text slide"><?php the_field('hero_text_2'); ?></p>
+						<p class="page_text slide"><?php the_field('hero_text_3'); ?></p>
+						<p class="page_text slide"><?php the_field('hero_text_4'); ?></p>
 						<button class="blue_button" onclick="plusDivs(1)">LEARN MORE</button>
 						<div class="dots">
     						<div class="dot" onclick="currentDiv(1)"></div>

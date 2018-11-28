@@ -7,6 +7,7 @@ add_theme_support( 'post-thumbnails' );
 //pav. dydžiai
 
 add_image_size('logo', 128, 50, false);
+add_image_size('big_logo', 235, 229, false);
 
 // Apsibrėžiame stiliaus failus ir skriptus
 
