@@ -36,13 +36,9 @@
 							<div class="studio_social">
 								<div class="footer_subtitle">STAY IN TOUCH</div>
 								<div class="subscribe_container">
-									<form class="subscribe_form" action="" method="post">
-										<input class="subscribe_field" type="email" name="subscribe_email" 
-										placeholder="Subscribe to our newsletter" required>
-										<div class="subscribe_overlay">
-											<input class="subscribe_submit" type="submit" value="">
-										</div>
-									</form>
+									<?php
+									echo do_shortcode(get_field('newsletter_form_shortcode'));
+									?>
 								</div>
 								<div class="social_container">
 									<a class="social_network" href="https://www.facebook.com/" target="_blank">
